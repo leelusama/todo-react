@@ -2,10 +2,11 @@ import React from 'react';
 
 function TodoItem(props) {
   const { todo, onDelete } = props;
+  const { text } = todo;
   return (
     <li>
       <button onClick={onDelete}>Delete</button>
-      {todo.text}
+      {text}
     </li>
   );
 }
